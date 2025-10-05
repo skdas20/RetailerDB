@@ -1,0 +1,42 @@
+
+INSERT INTO Brand VALUES (1,'PepsiCo');
+INSERT INTO Brand VALUES (2,'Nestle');
+INSERT INTO Brand VALUES (3,'P&G');
+
+INSERT INTO Product VALUES (101,'Pepsi 500ml',45,'Beverage',1);
+INSERT INTO Product VALUES (102,'Lays Chips',30,'Snacks',1);
+INSERT INTO Product VALUES (103,'Maggie Noodles',25,'Food',2);
+INSERT INTO Product VALUES (104,'Ariel Detergent',120,'Household',3);
+INSERT INTO Product VALUES (105,'Nescafe Coffee',150,'Beverage',2);
+
+INSERT INTO Store VALUES (201,'BigMart','Kolkata','WB');
+INSERT INTO Store VALUES (202,'SuperStore','Delhi','DL');
+INSERT INTO Store VALUES (203,'ValuePlus','Mumbai','MH');
+
+INSERT INTO Customer VALUES (301,'Amit Das','Male','amit@example.com','9876543210');
+INSERT INTO Customer VALUES (302,'Riya Sen','Female','riya@example.com','9123456789');
+INSERT INTO Customer VALUES (303,'Rahul Roy','Male','rahul@example.com','9988776655');
+
+INSERT INTO Vendor VALUES (401,'SRS Distributors','Kolkata','7000001111');
+INSERT INTO Vendor VALUES (402,'FoodSupply Co','Delhi','7000002222');
+INSERT INTO Vendor VALUES (403,'HouseNeeds Pvt Ltd','Mumbai','7000003333');
+
+INSERT INTO Inventory VALUES (201,101,80);
+INSERT INTO Inventory VALUES (201,102,60);
+INSERT INTO Inventory VALUES (202,103,100);
+INSERT INTO Inventory VALUES (202,104,50);
+INSERT INTO Inventory VALUES (203,105,70);
+
+INSERT INTO Sale VALUES (501,'01-SEP-2024',5,225,301,201,101);
+INSERT INTO Sale VALUES (502,'05-SEP-2024',3,90,302,201,102);
+INSERT INTO Sale VALUES (503,'06-SEP-2024',4,100,303,202,103);
+INSERT INTO Sale VALUES (504,'10-SEP-2024',2,240,301,203,105);
+
+-- Product-Vendor Supply relationships
+INSERT INTO Supplies VALUES (401,101,38,'15-AUG-2024');
+INSERT INTO Supplies VALUES (401,102,22,'15-AUG-2024');
+INSERT INTO Supplies VALUES (402,103,18,'20-AUG-2024');
+INSERT INTO Supplies VALUES (402,105,130,'20-AUG-2024');
+INSERT INTO Supplies VALUES (403,104,95,'25-AUG-2024');
+INSERT INTO Supplies VALUES (401,103,19,'28-AUG-2024');
+INSERT INTO Supplies VALUES (403,101,40,'30-AUG-2024');
