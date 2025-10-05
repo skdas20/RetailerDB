@@ -16,11 +16,21 @@ public class RetailerApp {
                 System.out.print("Enter choice: ");
                 int ch = sc.nextInt();
                 switch (ch) {
-                    case 1 -> viewProducts(con);
-                    case 2 -> addSale(con, sc);
-                    case 3 -> topProducts(con);
-                    case 4 -> { System.out.println("Goodbye!"); return; }
-                    default -> System.out.println("Invalid!");
+                    case 1:
+                        viewProducts(con);
+                        break;
+                    case 2:
+                        addSale(con, sc);
+                        break;
+                    case 3:
+                        topProducts(con);
+                        break;
+                    case 4:
+                        System.out.println("Goodbye!");
+                        return;
+                    default:
+                        System.out.println("Invalid!");
+                        break;
                 }
             }
         } catch (Exception e) { e.printStackTrace(); }
